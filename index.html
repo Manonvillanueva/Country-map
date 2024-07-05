@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pays App</title>
+  </head>
+  <body>
+    <div class="filter-container">
+      <!-- ---inputSearch  -->
+      <input type="text" id="inputSearch" placeholder="Rechercher" />
+
+      <!-- --- inputRange  -->
+      <div class="range-container">
+        <input type="range" value="24" max="250" id="inputRange" />
+        <span id="rangeValue">24</span>
+      </div>
+
+      <!-- --- buttons  -->
+      <button class="btnSort" id="minToMax">Tri croissant</button>
+      <button class="btnSort" id="maxToMin">Tri décroissant</button>
+      <button class="btnSort" id="alpha">Tri Alphabétique</button>
+    </div>
+
+    <!-- --- countriesDisplay  -->
+    <div class="countries-container"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
